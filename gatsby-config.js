@@ -1,21 +1,9 @@
-const {createProxyMiddleware} = require("http-proxy-middleware")
-
 module.exports = {
-  developMiddleware: app => {
-    app.use(
-        createProxyMiddleware("/api/ajaxSearch/index/*", {
-          target: "https://yt1s.com",
-          changeOrigin: true,
-          pathRewrite: {"^/api/ajaxSearch/index": ""},
-          headers: {Connection: 'keep-alive'}
-        })
-    )
-  },
   siteMetadata: {
     title: `YT1s.works`,
     description: `Youtube Video Downloader`,
-    author: `YT1s`,
-    siteUrl: `http://localhost:8000/`
+    author: `yt`,
+    siteUrl: `https://yt1s.works/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
