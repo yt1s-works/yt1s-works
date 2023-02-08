@@ -12,20 +12,20 @@ const Download = (props) => {
   return (
     <Layout>
       <Seo
-          lang={intl.locale}
-          title={intl.formatMessage({id: "download-seo-title"})}
-          pathname={pathname.split('/').length < 4 ? pathname : pathname.replace(/^\/?[^\/]+/, "")}
-          endpoint={pathname}
-          description={intl.formatMessage({id: "download-seo-desc"})}
+        lang={intl.locale}
+        title={intl.formatMessage({id: "download-seo-title"})}
+        pathname={pathname.split('/').length < 4 ? pathname : pathname.replace(/^\/?[^\/]+/, "")}
+        endpoint={pathname}
+        description={intl.formatMessage({id: "download-seo-desc"})}
       />
       <div className={styles.mainWrapper}>
         <h1><FormattedMessage id="downloader-title"/></h1>
         <p><FormattedMessage id="downloader-desc"/></p>
         <div className={styles.holdsIframe}>
-        <iframe
-          className={styles.iframe}
-          src={`https://yougomusic.com/api/widgetv2?url=${inputValue}`}
-          width="100%" height="100%" allowTransparency="true" scrolling="yes" style={{border: "none"}}/>
+          <iframe
+            className={styles.iframe}
+            src={`https://yougomusic.com/api/widgetv2?url=${inputValue}`}
+            width="100%" height="100%" allowTransparency="true" scrolling="yes" style={{border: "none"}}/>
         </div>
       </div>
     </Layout>

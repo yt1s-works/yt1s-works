@@ -1,6 +1,6 @@
 import * as React from "react"
-import { FormattedMessage, navigate } from "gatsby-plugin-intl"
-import { bestDescription, links, queAns, stepCount, typeDesc, typeIcon } from "../mp3"
+import {FormattedMessage, navigate} from "gatsby-plugin-intl"
+import {bestDescription, links, stepCount, typeDesc, typeIcon} from "../mp3"
 import * as styles from "../styles/sections.module.css"
 
 const SectionsMp3 = () => {
@@ -52,21 +52,6 @@ const SectionsMp3 = () => {
               </li>
             ))}
           </ul>
-        </div>
-        <div className={styles.sectionQue}>
-          <h2><FormattedMessage id="que-ans-title-mp3"/></h2>
-          <div>
-            {queAns.map((item, i) => (
-              <div key={i} className={styles.answer}>
-                <h4>{item.que}</h4>
-                <div>
-                  {item.ans.map((item) => (
-                    <div>{item.ans}</div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </div>

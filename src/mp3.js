@@ -73,33 +73,3 @@ export const stepCount = [
     style: { background: "#ceead6", color: "#34a853" }
   }
 ];
-
-export const queAns = [
-  {
-    que: <FormattedMessage id="question-one-mp3"/>,
-    ans: [{ ans: <FormattedMessage id="answers-one-one-mp3"/> },
-      { ans: <FormattedMessage id="answers-one-two-mp3"/> },
-      { ans: <FormattedMessage id="answers-one-three-mp3"/> },
-      { ans: <FormattedMessage id="answers-one-four-mp3"/> }]
-  },
-  {
-    que: <FormattedMessage id="question-two-mp3"/>,
-    ans: [{ ans: <FormattedMessage id="answers-two-mp3"/> }]
-  },
-  {
-    que: <FormattedMessage id="question-three-mp3"/>,
-    ans: [{ ans: <FormattedMessage id="answers-three-mp3"/> }]
-  },
-  {
-    que: <FormattedMessage id="question-four-mp3"/>,
-    ans: [{ ans: <FormattedMessage id="answers-four-mp3"/> }]
-  },
-  {
-    que: <FormattedMessage id="question-five-mp3"/>,
-    ans: [{ ans: <FormattedMessage id="answers-five-mp3"/> }]
-  },
-  {
-    que: <FormattedMessage id="question-six-mp3"/>,
-    ans: [{ ans: <FormattedMessage id="answers-six-mp3"/> }]
-  }
-];
