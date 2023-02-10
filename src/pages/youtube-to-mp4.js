@@ -21,7 +21,9 @@ const Mp4 = (props) => {
       />
       <div className={styles.mainWrapper}>
         <h1><FormattedMessage id="mp4-title"/></h1>
-        <div><FormattedMessage id="mp4-desc"/></div>
+        <div>
+          <p><FormattedMessage id="mp4-desc"/></p>
+        </div>
         <Converter/>
       </div>
       <SectionsMp4/>

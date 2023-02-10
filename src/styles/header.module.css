@@ -29,6 +29,11 @@
   cursor: pointer;
 }
 
+.arrowIcon {
+  margin-top: 8px;
+  margin-left: 4px;
+}
+
 .subMenuLang {
   transform: scale(1);
   visibility: visible;

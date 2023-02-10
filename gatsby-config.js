@@ -29,13 +29,19 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `yt1s`,
+        short_name: `yt1s`,
         start_url: `/`,
         display: `minimal-ui`,
         icon: `src/images/favicon.svg`
       }
     },
-    'gatsby-plugin-sitemap'
+    'gatsby-plugin-sitemap',
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/index/`, `/youtube-to-mp3/`, `/youtube-to-mp3/*`],
+      },
+    }
   ],
 };

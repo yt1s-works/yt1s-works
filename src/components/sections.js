@@ -58,7 +58,7 @@ const Sections = () => {
           <div>
             {queAns.map((item, i) => (
               <div key={i} className={styles.answer}>
-                <h4>{item.que}</h4>
+                <h3 className={styles.queHeading}>{item.que}</h3>
                 <div>
                   {item.ans.map((item) => (
                     <div>{item.ans}</div>

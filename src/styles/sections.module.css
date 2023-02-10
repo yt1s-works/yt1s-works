@@ -136,6 +136,11 @@
 
 .answer {
   text-align: initial;
+  margin: 15px 0 3px 0;
+}
+
+.queHeading {
+  font-size: var(--font-sm);
 }
 
 @media only screen and (max-width: 910px) {
