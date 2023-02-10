@@ -25,15 +25,15 @@ export const languageName = {
   ko: "한국어",
   my: "Myanmar (မြန်မာ)",
   ms: "Malay",
-  ph: "Filipino",
   pt: "Português",
   ru: "Русский",
   th: "ไทย",
   tr: "Türkçe",
   vi: "Tiếng Việt",
+  "tl-PH": "Filipino",
   "zh-cn": "简体中文",
   "zh-tw": "繁體中文",
-  sa: "العربية",
+  ar: "العربية",
   bn: "বাঙালি",
 };
 
@@ -49,7 +49,7 @@ export const locales = [
   {code: "ko"},
   {code: "my"},
   {code: "ms"},
-  {code: "ph"},
+  {code: "tl-PH"},
   {code: "pt"},
   {code: "ru"},
   {code: "th"},
@@ -57,7 +57,7 @@ export const locales = [
   {code: "vi"},
   {code: "zh-cn"},
   {code: "zh-tw"},
-  {code: "sa"},
+  {code: "ar"},
   {code: "bn"},
 ];
 

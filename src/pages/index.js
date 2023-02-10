@@ -21,7 +21,7 @@ const IndexPage = (props) => {
         />
         <div className={styles.mainWrapper}>
           <h1><FormattedMessage id="downloader-title"/></h1>
-          <p><FormattedMessage id="downloader-desc"/></p>
+          <div><FormattedMessage id="downloader-desc"/></div>
           <Converter/>
         </div>
         <Sections/>

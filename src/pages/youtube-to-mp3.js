@@ -21,7 +21,7 @@ const Mp3 = (props) => {
         />
         <div className={styles.mainWrapper}>
           <h1><FormattedMessage id="mp3-title"/></h1>
-          <p><FormattedMessage id="mp3-desc"/></p>
+          <div><FormattedMessage id="mp3-desc"/></div>
           <Converter/>
         </div>
         <SectionsMp3/>
