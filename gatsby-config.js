@@ -42,6 +42,15 @@ module.exports = {
       options: {
         precachePages: [`/index/`, `/youtube-to-mp3/`, `/youtube-to-mp3/*`],
       },
-    }
+    },
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        analyzerMode: "server",
+        analyzerPort: "8888",
+        analyzerHost: "https://yt1s.works/",
+        defaultSizes: "gzip"
+      },
+    },
   ],
 };
