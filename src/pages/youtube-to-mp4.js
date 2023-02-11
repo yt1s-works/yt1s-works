@@ -18,6 +18,7 @@ const Mp4 = (props) => {
           pathname={pathname.split('/').length < 4 ? pathname : pathname.replace(/^\/?[^\/]+/, "")}
           endpoint={pathname}
           description={intl.formatMessage({id: "mp4-seo-desc"})}
+          index="index,follow"
       />
       <div className={styles.mainWrapper}>
         <h1><FormattedMessage id="mp4-title"/></h1>

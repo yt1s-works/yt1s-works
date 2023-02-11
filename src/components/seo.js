@@ -3,7 +3,7 @@ import {Helmet} from "react-helmet";
 import {useStaticQuery, graphql} from "gatsby"
 import {locales} from "../data";
 
-function Seo({description, lang, title, pathname, endpoint}) {
+function Seo({description, lang, title, pathname, endpoint, index}) {
   const {site} = useStaticQuery(
     graphql`
       query {
@@ -32,7 +32,8 @@ function Seo({description, lang, title, pathname, endpoint}) {
       <meta name="twitter:creator" content={site.siteMetadata?.author || ``}/>
       <meta name="twitter:title" content={title}/>
       <meta name="twitter:description" content={description}/>
-      <meta name="robots" content="noindex,nofollow"/>
+      <meta name="robots" content={index}/>
+      <meta name="google-site-verification" content="Ru5brt9NL0oMkvkLOxapstJ8x649cTwqEaRTSeQOTCE" />
       <link rel='canonical' href={`https://yt1s.works${endpoint}`}/>
       {locales.map((locale) => (
         locale.code === 'en' ?

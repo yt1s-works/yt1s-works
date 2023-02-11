@@ -18,6 +18,7 @@ const IndexPage = (props) => {
             pathname={pathname.replace(/^\/?[^\/]+/, "")}
             endpoint={pathname}
             description={intl.formatMessage({id: "downloader-seo-title"})}
+            index="index,follow"
         />
         <div className={styles.mainWrapper}>
           <h1><FormattedMessage id="downloader-title"/></h1>

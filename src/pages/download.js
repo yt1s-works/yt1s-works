@@ -17,6 +17,7 @@ const Download = (props) => {
         pathname={pathname.split('/').length < 4 ? pathname : pathname.replace(/^\/?[^\/]+/, "")}
         endpoint={pathname}
         description={intl.formatMessage({id: "download-seo-desc"})}
+        index="noindex,nofollow"
       />
       <div className={styles.mainWrapper}>
         <h1><FormattedMessage id="downloader-title"/></h1>
