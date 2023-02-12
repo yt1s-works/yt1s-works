@@ -20,7 +20,7 @@ function Seo({description, lang, title, pathname, endpoint, index}) {
 
   return (
     <Helmet>
-      <html lang={lang || 'en'} amp/>
+      <html lang={lang || 'en'}/>
       <meta charSet="utf-8"/>
       <title>{title}</title>
       <meta name="description" content={description}/>
