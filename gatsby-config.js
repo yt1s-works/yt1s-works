@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: `always`,
   siteMetadata: {
     title: `YT1s.works`,
     description: `Youtube Video Downloader`,
