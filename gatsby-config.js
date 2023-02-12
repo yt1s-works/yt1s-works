@@ -3,7 +3,7 @@ module.exports = {
     title: `YT1s.works`,
     description: `Youtube Video Downloader`,
     author: `yt`,
-    siteUrl: `https://yt1s.works/`
+    siteUrl: `https://yt1s.works`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -36,12 +36,13 @@ module.exports = {
         icon: `src/images/favicon.svg`
       }
     },
-    'gatsby-plugin-sitemap',
     {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [`/index/`, `/youtube-to-mp3/`, `/youtube-to-mp3/*`],
       },
-    }
+    },
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-robots-txt`
   ],
 };
