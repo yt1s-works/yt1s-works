@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://yt1s.works/sitemap-index.xml
+Sitemap: https://yt1s.works/sitemap-0.xml
 Host: https://yt1s.works
