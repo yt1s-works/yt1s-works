@@ -1,21 +1,15 @@
 import * as React from "react"
 import {useState} from "react"
 import {StaticImage} from "gatsby-plugin-image";
-import {changeLocale, IntlContextConsumer, Link} from "gatsby-plugin-intl"
+import {changeLocale, IntlContextConsumer, Link, useIntl} from "gatsby-plugin-intl"
 import Navigation from "./navigation"
 import * as styles from "../styles/header.module.css"
-import {languageName} from "../data";
+import {languageName, localLang} from "../data";
 
 const Header = () => {
+  const intl = useIntl();
   const [openLang, setOpenLang] = useState(false);
-  const [languages, setLanguages] = useState();
-
-  const handleLanguageChange = (item) => {
-    const array = Object.entries(languageName);
-    const filtered = array.filter(([key]) => key === item);
-    const filteredArray = Object.values(filtered);
-    setLanguages(filteredArray[0][1])
-  };
+  const filtered = localLang.filter((item) => item.code === intl.locale)
 
   return (
     <header>
@@ -27,7 +21,7 @@ const Header = () => {
         </Link>
         <div className={styles.language}>
           <div style={{display: "flex"}} onClick={() => setOpenLang(!openLang)}>
-            <div>{languages}</div>
+            <div>{filtered[0]?.text}</div>
             <div>
               <StaticImage
                 className={styles.arrowIcon}
@@ -39,8 +33,8 @@ const Header = () => {
         </div>
         <div>
           <IntlContextConsumer>
-            {({languages, language: currentLocale}) => (
-              <div onChange={handleLanguageChange(currentLocale)}>
+            {({languages}) => (
+              <div>
                 {openLang &&
                   <ul className={styles.subMenuLang}>
                     {languages.map(language => (

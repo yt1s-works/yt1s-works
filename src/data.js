@@ -36,6 +36,29 @@ export const languageName = {
   ar: "العربية",
   bn: "বাঙালি",
 };
+export const localLang = [
+  {code: "en", text: "English"},
+  {code: "de", text: "Deutsch"},
+  {code: "es", text: "Español"},
+  {code: "fr", text: "Français"},
+  {code: "hi", text: "हिन्दी / Hindī"},
+  {code: "id", text: "Indonesian"},
+  {code: "it", text: "Italiano"},
+  {code: "ja", text: "日本語"},
+  {code: "ko", text: "한국어"},
+  {code: "my", text: "Myanmar (မြန်မာ)"},
+  {code: "ms", text: "Malay"},
+  {code: "tl-PH", text: "Filipino"},
+  {code: "pt", text: "Português"},
+  {code: "ru", text: "Русский"},
+  {code: "th", text: "ไทย"},
+  {code: "tr", text: "Türkçe"},
+  {code: "vi", text: "Tiếng Việt"},
+  {code: "zh-cn", text: "简体中文"},
+  {code: "zh-tw", text: "繁體中文"},
+  {code: "ar", text: "العربية"},
+  {code: "bn", text: "বাঙালি"},
+];
 
 export const locales = [
   {code: "en"},

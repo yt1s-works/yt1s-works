@@ -65,6 +65,7 @@
 
 .list {
   list-style: none;
+  cursor: pointer;
 }
 
 /* Mobile responsive */

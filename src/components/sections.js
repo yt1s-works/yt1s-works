@@ -1,6 +1,6 @@
 import * as React from "react"
-import { FormattedMessage, navigate } from "gatsby-plugin-intl"
-import { bestDescription, links, queAns, stepCount, typeDesc, typeIcon } from "../downloader"
+import {FormattedMessage, navigate} from "gatsby-plugin-intl"
+import {bestDescription, links, queAns, stepCount, typeDesc, typeIcon} from "../downloader"
 import * as styles from "../styles/sections.module.css"
 
 const Sections = () => {
