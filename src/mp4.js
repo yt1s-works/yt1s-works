@@ -38,7 +38,7 @@ export const links = [
     style: {background: "#ffd5ec"},
     description:
       <>
-        <Link to="/" style={{textDecoration: "none"}}>
+        <Link to="https://yt1s.works/" style={{textDecoration: "none"}}>
           <FormattedMessage id="box-desc-five-mp4-key" defaultMessage=" "/>
         </Link>
         <FormattedMessage id="box-desc-five-mp4"/>
