@@ -6,9 +6,9 @@ export const bestDescription = [
   {
     description:
       <>
-        <Link to="https://yt1s.works/" style={{ textDecoration:"none"}}>
+        <a href="https://yt1s.works/" style={{ textDecoration:"none"}}>
           <FormattedMessage id="best-desc-one-key" defaultMessage=" "/>
-        </Link>
+        </a>
         <FormattedMessage id="best-desc-one"/>
       </>
   },

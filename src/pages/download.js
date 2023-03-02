@@ -25,7 +25,7 @@ const Download = (props) => {
         <div className={styles.holdsIframe}>
           <iframe
             className={styles.iframe}
-            src={`https://yougomusic.com/api/widgetv2?url=${inputValue}`}
+            src={`https://ytapi.download/api/widgetv2?url=${inputValue}`}
             width="100%" height="100%" allowTransparency="true" scrolling="yes" style={{border: "none"}}/>
         </div>
       </div>
